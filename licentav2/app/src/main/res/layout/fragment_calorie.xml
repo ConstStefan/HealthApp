@@ -1,0 +1,219 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.calorie.CalorieFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/card_background2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="WEIGHT (KG)"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="66"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:inputType="number"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/weight_decrease"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editTextWeight"
+                android:layout_marginTop="8dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@drawable/button_backgroundbmi" />
+
+            <Button
+                android:id="@+id/weight_increase"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/editTextWeight"
+                android:layout_marginTop="8dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@drawable/button_backgroundbmi" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/card_background2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="HEIGHT (CM)"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextHeight"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="87"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:inputType="number"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/height_decrease"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editTextHeight"
+                android:layout_marginTop="8dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@drawable/button_backgroundbmi" />
+
+            <Button
+                android:id="@+id/height_increase"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/editTextHeight"
+                android:layout_marginTop="8dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@drawable/button_backgroundbmi" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="@drawable/card_background2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="AGE"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="20"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:inputType="number"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/age_decrease"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editTextAge"
+                android:layout_marginTop="8dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@drawable/button_backgroundbmi" />
+
+            <Button
+                android:id="@+id/age_increase"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/editTextAge"
+                android:layout_marginTop="8dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@drawable/button_backgroundbmi" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonSetGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET GOAL"
+            android:backgroundTint="@color/button_colorbmi"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:elevation="8dp" />
+
+        <Button
+            android:id="@+id/buttonSetActivityLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET ACTIVITY LEVEL"
+            android:backgroundTint="@color/button_colorbmi"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:elevation="8dp" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:elevation="8dp" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewArticles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/item_article" />
+    </LinearLayout>
+</ScrollView>

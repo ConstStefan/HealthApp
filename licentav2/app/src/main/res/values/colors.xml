@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_green">#006400</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="blue">#03A9F4</color>
+    <color name="button_color">#C453C3FF</color>
+    <color name="gray">#B3B3B3</color>
+    <color name="design_default_color_primary">#6200EE</color>
+    <color name="low_body_fat">#04CC04</color>
+    <color name="normal_body_fat">#FFFF00</color>
+    <color name="high_body_fat">#FF0000</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="nav_item_color">#6200EE</color>
+    <color name="nav_item_color_default">#9E9E9E</color>
+    <color name="nav_item_color_selected">#000000</color>
+    <color name="background_color">#000317</color>
+    <color name="primary">#000425</color>
+    <color name="button_colorbmi">#FF0266</color>
+    <color name="selected_card_background">#000425</color>
+    <color name="card_background">#BABABA</color>
+    <color name="calorie_background_color">#F0F0F0</color>
+    <color name="calorie_primary_text">#212121</color>
+    <color name="calorie_secondary_text">#757575</color>
+    <color name="calorie_button_color">#0B6C00</color>
+    <color name="grinchis">#0C0C0C</color>
+    <color name="button_disabled_color">#B0BEC5</color>
+    <color name="summarygrey">#ECECEC</color>
+        <!-- alte culori -->
+    <color name="progress_background">#FFFFFF</color>
+    <color name="progress_secondary">#FFD700</color>
+    <color name="progress_primary">#32CD32</color>
+    <color name="colorStatusBar">#FFFFFF</color>
+    <color name="unselected_color">#FFFFFF</color>
+    <color name="grideschis">#F4F4F4</color>
+
+
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">proiectlicenta</string>
+    <string name="welcome_head_profile">Welcome, %1$s!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="google_maps_key">AIzaSyCfvcqL6fkhlMcnGzW24ic18wglcafBP_U</string>
+    <string name="weekly_average">Weekly Average: %d</string>
+    <string name="monthly_average">Monthly Average: %d</string>
+    <string name="total_steps_weekly">Total Steps in Last 7 Days: %d</string>
+    <string name="total_steps_monthly">Total Steps in Last 30 Days: %d</string>
+    <string name="goal">Goal</string>
+    <string name="calories_burned">kcal: %.0f</string>
+
+
+
+</resources>

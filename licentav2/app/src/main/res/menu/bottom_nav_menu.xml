@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_bmi"
+        android:title="BMI"
+        android:icon="@drawable/ic_bmi"/>
+    <item
+        android:id="@+id/navigation_calorie"
+        android:title="CALORIES"
+        android:icon="@drawable/ic_calories"
+        />
+    <item
+        android:id="@+id/navigation_bodyfat"
+        android:title="BODY FAT"
+        android:icon="@drawable/ic_body"/>
+    <item
+        android:id="@+id/navigation_summary"
+        android:title="SUMMARY"
+        android:icon="@drawable/ic_home"/>
+</menu>
+
+
+

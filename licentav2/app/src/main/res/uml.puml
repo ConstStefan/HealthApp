@@ -1,0 +1,71 @@
+@startuml
+
+!define FirebaseAuth class
+!define DatabaseReference class
+!define StorageReference class
+
+class MainActivity {
+    - FirebaseAuth mAuth
+    + void onCreate(Bundle savedInstanceState)
+}
+
+class LoginActivity {
+    - FirebaseAuth mAuth
+    + void signIn(String email, String password)
+}
+
+class RegisterActivity {
+    - FirebaseAuth mAuth
+    + void register(String email, String password, String name, String dob, String gender, String phone)
+}
+
+class UserProfileActivity {
+    - FirebaseAuth mAuth
+    - DatabaseReference mDatabase
+    + void loadUserProfile()
+}
+
+class UpdateProfileActivity {
+    - FirebaseAuth mAuth
+    - DatabaseReference mDatabase
+    + void updateProfile(String name, String dob, String gender, String phone)
+}
+
+class UpdateEmailActivity {
+    - FirebaseAuth mAuth
+    + void updateEmail(String newEmail)
+}
+
+class ChangePasswordActivity {
+    - FirebaseAuth mAuth
+    + void changePassword(String newPassword)
+}
+
+class ForgotPasswordActivity {
+    - FirebaseAuth mAuth
+    + void sendPasswordResetEmail(String email)
+}
+
+class DeleteProfileActivity {
+    - FirebaseAuth mAuth
+    + void deleteProfile()
+}
+
+class UploadProfilePicActivity {
+    - FirebaseAuth mAuth
+    - StorageReference mStorage
+    + void uploadProfilePic(Uri uri)
+}
+
+MainActivity --> LoginActivity : navigates to
+MainActivity --> RegisterActivity : navigates to
+LoginActivity --> UserProfileActivity : navigates to
+RegisterActivity --> UserProfileActivity : navigates to
+UserProfileActivity --> UpdateProfileActivity : navigates to
+UserProfileActivity --> UpdateEmailActivity : navigates to
+UserProfileActivity --> ChangePasswordActivity : navigates to
+UserProfileActivity --> ForgotPasswordActivity : navigates to
+UserProfileActivity --> DeleteProfileActivity : navigates to
+UserProfileActivity --> UploadProfilePicActivity : navigates to
+
+@enduml

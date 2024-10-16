@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Proiectlicenta" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+
+        <!-- Customize your light theme here. -->
+
+    </style>
+    <style name="Widget.AppCompat.Button.OutlinedButton">
+        <item name="android:background">@drawable/button_backgroundswitch</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+
+
+
+</resources>

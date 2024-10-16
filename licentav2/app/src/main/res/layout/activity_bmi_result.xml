@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:id="@+id/content_view">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        app:title="BMI"
+        app:menu="@menu/menu_toolbar"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="26dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/summarygrey"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewBmiStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BMI Status"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewBmiResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23.0"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewBmiRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Normal BMI range:\n18.5 - 25 kg/m²"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="16dp"/>
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="your Age: 21 (Adult)"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/summarygrey"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewSuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suggestion: You have a healthy weight. Keep maintaining your current lifestyle."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
